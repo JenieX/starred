@@ -20,7 +20,14 @@ Create and maintain your own Awesome-style list from GitHub stars.
 Requires Python `3.10+`.
 
 ```bash
-pip install starred
+# One time command
+# python -m venv environments/starred
+
+. environments/starred/Scripts/activate
+
+which python
+
+pip install --no-cache-dir starred
 ```
 
 ## Quick Start
@@ -29,8 +36,7 @@ pip install starred
 2. Generate a README from your stars:
 
 ```bash
-export GITHUB_TOKEN=<your-token>
-starred --username <your-github-username> --sort > README.md
+starred --username JenieX --token=xxxxxxxx --sort > starred-list.md
 ```
 
 ## CLI Usage
